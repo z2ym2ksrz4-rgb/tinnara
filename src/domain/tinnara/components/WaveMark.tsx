@@ -1,11 +1,17 @@
-/** The sound-wave mark from the app icon: a dot with three arcs. Used on the "louder now" button and the widget preview. */
+/**
+ * The tone mark from the app icon: a dot (the ear canal) and a high-pitched wave growing out of it.
+ * Used on the "Louder now" button and the widget preview.
+ */
+const pts = Array.from({ length: 61 }, (_, i) => {
+  const x = 22 + i * 1.25, amp = 2 + i * 0.32;
+  return `${x.toFixed(1)},${(50 + amp * Math.sin(i / 2.2)).toFixed(1)}`;
+}).join(" ");
+
 export function WaveMark({ size = 48, color = "currentColor", core = "var(--accent)" }: { size?: number; color?: string; core?: string }) {
   return (
     <svg width={size} height={size} viewBox="0 0 100 100" aria-hidden="true" fill="none">
-      <circle cx="26" cy="50" r="10" fill={core} />
-      <path d="M44 32 a26 26 0 0 1 0 36" stroke={color} strokeWidth="7" strokeLinecap="round" />
-      <path d="M58 21 a40 40 0 0 1 0 58" stroke={color} strokeWidth="7" strokeLinecap="round" opacity=".8" />
-      <path d="M72 11 a54 54 0 0 1 0 78" stroke={color} strokeWidth="7" strokeLinecap="round" opacity=".55" />
+      <circle cx="16" cy="50" r="9" fill={core} />
+      <polyline points={pts} stroke={color} strokeWidth="6.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }

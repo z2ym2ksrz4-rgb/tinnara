@@ -24,24 +24,28 @@ let amber = Color(red: 0.97, green: 0.74, blue: 0.33)
 let amberDark = Color(red: 0.85, green: 0.48, blue: 0.16)
 let ink = Color(red: 0.18, green: 0.23, blue: 0.33)
 
-/// Sound-wave mark: a dot and two arcs (same as the in-app "Louder now" mark).
+/// Tone mark: a dot (the ear canal) and a high-pitched wave growing out of it – same as the app icon.
 struct Waves: View {
     var size: CGFloat
     var color: Color = .white
     var body: some View {
-        ZStack {
-            Circle().fill(color).frame(width: size * 0.2, height: size * 0.2).offset(x: -size * 0.26)
-            Arc(radius: size * 0.26).stroke(color, style: StrokeStyle(lineWidth: size * 0.08, lineCap: .round)).offset(x: -size * 0.26)
-            Arc(radius: size * 0.44).stroke(color.opacity(0.75), style: StrokeStyle(lineWidth: size * 0.08, lineCap: .round)).offset(x: -size * 0.26)
+        ZStack(alignment: .leading) {
+            Tone().stroke(color, style: StrokeStyle(lineWidth: size * 0.065, lineCap: .round, lineJoin: .round))
+            Circle().fill(color).frame(width: size * 0.18, height: size * 0.18).offset(x: size * 0.07)
         }.frame(width: size, height: size)
     }
 }
 
-struct Arc: Shape {
-    var radius: CGFloat
+struct Tone: Shape {
     func path(in r: CGRect) -> Path {
         var p = Path()
-        p.addArc(center: CGPoint(x: r.midX, y: r.midY), radius: radius, startAngle: .degrees(-45), endAngle: .degrees(45), clockwise: false)
+        for i in 0...60 {
+            let t = CGFloat(i)
+            let x = r.minX + r.width * (0.22 + t * 0.0125)
+            let amp = r.height * (0.02 + t * 0.0032)
+            let y = r.midY + amp * CGFloat(sin(Double(t) / 2.2))
+            if i == 0 { p.move(to: CGPoint(x: x, y: y)) } else { p.addLine(to: CGPoint(x: x, y: y)) }
+        }
         return p
     }
 }
