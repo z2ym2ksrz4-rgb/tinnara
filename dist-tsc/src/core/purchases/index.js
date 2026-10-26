@@ -29,6 +29,11 @@ export const usePurchases = create((set, get) => ({
         }
         const { Purchases, LOG_LEVEL } = await import("@revenuecat/purchases-capacitor");
         const apiKey = Capacitor.getPlatform() === "ios" ? appConfig.revenueCat.ios : appConfig.revenueCat.android;
+        // A new app's first TestFlight builds can ship before RevenueCat exists: no key → free tier, empty paywall, no SDK call.
+        if (!apiKey || /TODO/.test(apiKey)) {
+            set({ ready: true, isPro: false, packages: [] });
+            return;
+        }
         await Purchases.setLogLevel({ level: __RELEASE__ ? LOG_LEVEL.ERROR : LOG_LEVEL.DEBUG });
         await Purchases.configure({ apiKey });
         const refresh = async () => {
