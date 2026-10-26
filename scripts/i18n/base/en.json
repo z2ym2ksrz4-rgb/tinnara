@@ -1,0 +1,481 @@
+{
+  "nav": {
+    "home": "Home",
+    "calendar": "Calendar",
+    "insights": "Insights",
+    "settings": "Settings"
+  },
+  "common": {
+    "add": "Add",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "done": "Done",
+    "other": "Other…",
+    "typeOwn": "Type your own",
+    "disclaimer": "Migrano is a self-observation diary, not a medical device. It does not diagnose or give treatment advice. Talk to your doctor about what you log.",
+    "edit": "Edit",
+    "off": "Turn off",
+    "on": "Turn on",
+    "search": "Search"
+  },
+  "home": {
+    "title": "Migrano",
+    "attackNow": "Attack now",
+    "endAttack": "Attack is over",
+    "openSince": "Attack ongoing since {{time}}",
+    "tapToEdit": "Tap to add details or end it",
+    "attackDays": "attack days this month",
+    "medDays": "medication days this month",
+    "recent": "Recent attacks",
+    "ongoing": "ongoing",
+    "empty": "No attacks logged yet. When one starts, tap the button — details can wait.",
+    "checkinTitle": "How was today?",
+    "checkin": {
+      "none": "No headache",
+      "mild": "Mild",
+      "attack": "Attack"
+    },
+    "fields": {
+      "sleep": "Sleep last night",
+      "stress": "Stress today"
+    },
+    "medWarnTitle": "{{n}} medication days this month",
+    "medWarnBody": "You chose to be told at {{n}} days. Frequent acute medication is worth discussing with your doctor.",
+    "greeting": "Hi {{name}}",
+    "attackHint": "One tap starts the clock",
+    "streak_one": "day without an attack",
+    "streak_other": "days without an attack",
+    "saveDay": "Save the day",
+    "savedDay": "Today is saved",
+    "periodToday": "Period today",
+    "periodShort": "period",
+    "periodHint": "Tap to mark today"
+  },
+  "episode": {
+    "title": "Attack",
+    "ongoing": "Attack in progress",
+    "start": "Start",
+    "end": "End",
+    "duration": "{{h}} h",
+    "intensity": "Intensity",
+    "mildLbl": "mild",
+    "severeLbl": "severe",
+    "note": "Note",
+    "notePh": "Anything else worth remembering",
+    "deleteConfirm": "Delete this attack?",
+    "quickIntro": "The clock is running. Everything else can wait until you feel better.",
+    "howBad": "How bad is it right now?",
+    "level": {
+      "mild": "Mild",
+      "moderate": "Moderate",
+      "severe": "Severe"
+    },
+    "laterLink": "Fill in later",
+    "journey": {
+      "trigger": "What do you think triggered it?",
+      "symptom": "What did you notice?",
+      "meds": "Did you take anything?",
+      "note": "Anything to remember?",
+      "relief": "What helped?"
+    },
+    "more": "{{n}} more…",
+    "skip": "Skip",
+    "editAll": "Edit all details",
+    "doneTitle": "Logged",
+    "tagsCount": "tags",
+    "cmpTitle": "This attack vs. your average",
+    "cmpThis": "This attack",
+    "cmpAvg": "Average of {{n}} attacks",
+    "cmpNeedMore": "Log a couple more attacks and this will show how this one compares to your average.",
+    "cmpLocked": "Pro shows how this attack compares to your average.",
+    "liveHint": "Ending the attack opens a few short questions – answer what you can.",
+    "howBadNow": "How bad is it right now?"
+  },
+  "calendar": {
+    "noAttacks": "No attack this day."
+  },
+  "meds": {
+    "title": "Medication",
+    "sub": "Your own preparations, by name. Migrano never suggests medicines or doses.",
+    "name": "Name",
+    "namePh": "e.g. Sumatriptan 50 mg",
+    "acute": "Acute",
+    "preventive": "Preventive",
+    "acuteHint": "Only acute medication counts towards medication days.",
+    "addFirst": "Add your medication",
+    "show": "Show",
+    "hide": "Hide"
+  },
+  "insights": {
+    "title": "Insights",
+    "lockedTitle": "Patterns need Pro",
+    "lockedBody": "Attack days per month, average duration and intensity, and which triggers and symptoms come up most — plus the PDF report for your doctor.",
+    "attackDaysPerMonth": "Attack days per month, last 12 months",
+    "range": {
+      "month": "This month",
+      "3m": "3 months",
+      "12m": "12 months"
+    },
+    "attacks": "attacks",
+    "avgHours": "avg. hours",
+    "avgIntensity": "avg. intensity",
+    "medDays": "acute medication days (your limit: {{n}})",
+    "shareOfAttacks": "share of attacks",
+    "noData": "Not enough data yet.",
+    "disclaimer": "Shares are simple counts of what you logged, not evidence of cause.",
+    "attackDays": "attack days",
+    "patterns": "Your patterns",
+    "patWeekday": "{{pct}}% of your attacks started on a {{day}}",
+    "patTime": "{{pct}}% of your attacks started in the {{part}}",
+    "part": {
+      "night": "night",
+      "morning": "morning",
+      "afternoon": "afternoon",
+      "evening": "evening"
+    },
+    "patField": "{{field}} the day before an attack averaged {{before}} – vs. {{calm}} before calm days",
+    "patFieldBasis": "Based on {{n}} check-ins before attacks",
+    "patPeriod": "{{pct}}% of your attacks started within a day of your period",
+    "patBasis": "Based on {{n}} attacks in the last 6 months",
+    "patNote": "Patterns describe your log – they do not prove a cause. Bring them to your doctor.",
+    "patNeed": "Patterns appear after 5 attacks and 14 check-ins ({{a}} attacks and {{c}} check-ins to go).",
+    "mohTitle": "Medication days, last 3 months",
+    "mohAlert": "{{n}}+ medication days three months in a row",
+    "mohBody": "This pattern is worth discussing with your doctor – it can itself cause headache.",
+    "mohShareBtn": "Share text for your doctor",
+    "mohShare": "Medication days ({{app}}): {{months}}. Limit chosen: {{n}} days/month.",
+    "mohHint": "Stays calm as long as you are under {{n}} days a month.",
+    "patPressure": "{{pct}}% of your attacks started on a day with falling air pressure (≥{{hpa}} hPa) – against {{all}}% of all days.",
+    "learnTitle": "What it looks like",
+    "learnNote": "Observations from your own log, in plain words. They describe – they do not explain.",
+    "learnEmpty": "Once you have logged a handful of attacks and daily check-ins, this will sum up what stands out in plain words."
+  },
+  "report": {
+    "title": "Headache diary report",
+    "cta": "PDF report",
+    "sub": "A one-page summary plus one row per attack, formatted for a doctor's visit.",
+    "preset": {
+      "month": "This month",
+      "last": "Last month",
+      "3m": "Last 3 months",
+      "custom": "Choose dates"
+    },
+    "from": "From",
+    "to": "To",
+    "make": "Create PDF",
+    "medDays": "Days with acute medication",
+    "attacks": "Attacks",
+    "hours": "Hours",
+    "intensityShort": "Int.",
+    "count": "Count (share)",
+    "footer": "Created with {{app}} — a self-observation diary, not a medical device",
+    "chartTitle": "Per month",
+    "notesTitle": "Notes for the doctor",
+    "notesPh": "Questions, changes in medication, anything else…",
+    "pressureCol": "hPa (Δ)",
+    "pressureNote": "hPa = daily mean air pressure for your place, Δ = change from the day before."
+  },
+  "notif": {
+    "checkinTitle": "How was today?",
+    "checkinBody": "A 5-second check-in keeps your diary complete.",
+    "openTitle": "Is the attack over?",
+    "openBody": "An attack has been open for 24 hours. Tap to set the end time.",
+    "actionEnd": "Over now",
+    "actionContinue": "Still going"
+  },
+  "lock": {
+    "title": "Enter PIN",
+    "hint": "Your diary is locked. Enter your 4–6 digit PIN."
+  },
+  "settings": {
+    "language": "Language",
+    "privacy": "Privacy",
+    "privacyPolicy": "Privacy policy",
+    "support": "Support",
+    "diary": "Diary",
+    "manage": "Manage",
+    "medThreshold": "Tell me about medication days at",
+    "daysPerMonth": "{{n}} days/month",
+    "medThresholdHint": "Many guidelines mention 10 or 15 days per month as a point to raise with a doctor. Pick what yours uses.",
+    "reminders": "Reminders",
+    "checkinReminder": "Daily check-in reminder",
+    "reminderTime": "Time",
+    "openEpisodeReminder": "Remind me if an attack stays open for 24 h",
+    "pin": "PIN lock",
+    "pinOn": "On — asked after 1 minute in the background",
+    "pinOff": "Off",
+    "pinSetup": "Set PIN",
+    "pinRemove": "Remove",
+    "pinRemoved": "PIN removed",
+    "pinSet": "PIN set",
+    "pinNew": "New PIN (4–6 digits)",
+    "pinRepeat": "Repeat PIN",
+    "pinMismatch": "PINs do not match",
+    "pinHint": "There is no way to recover a forgotten PIN — only deleting all data unlocks the app.",
+    "data": "Your data",
+    "dataNote": "Everything stays on this phone. The backup file is encrypted with your passphrase and shared by you — never uploaded by us.",
+    "about": "About",
+    "feedback": "Send feedback",
+    "restored": "Purchases restored",
+    "proThanks": "Thank you for supporting Migrano.",
+    "freeHint": "Unlimited logging. Pro adds insights, the PDF report and the PIN lock.",
+    "profile": "Profile",
+    "whatIsThis": "What is this?",
+    "cycleTracking": "Track menstrual cycle",
+    "cycleHint": "Adds a \"period today\" chip to the check-in and shows the share of attacks around your period.",
+    "widget": "Widget",
+    "planLifetime": "Lifetime – no renewal",
+    "planYearly": "Yearly · renews {{date}}",
+    "planTrial": "Free trial until {{date}}",
+    "planRenews": "Renews on {{date}}",
+    "planEnds": "Ends on {{date}}",
+    "switchLifetime": "Switch to lifetime",
+    "switchLifetimeHint": "Buy lifetime once, then cancel the yearly plan under Manage subscription – the store does not switch automatically.",
+    "manageSub": "Manage subscription",
+    "planStore": "Purchased via {{store}}",
+    "triggers": "Triggers and health"
+  },
+  "backup": {
+    "export": "Export encrypted backup",
+    "import": "Import backup",
+    "passphrase": "Choose a passphrase for the backup file",
+    "passphraseShort": "Passphrase",
+    "file": "Backup file",
+    "importHint": "Newest entry wins when the same attack exists on both phones.",
+    "wrongApp": "This backup belongs to another app",
+    "exported": "Backup exported",
+    "imported": "Backup imported",
+    "importFailed": "Could not import — wrong passphrase or file?",
+    "wipe": "Delete all data",
+    "wipeConfirm": "This permanently deletes everything stored in the app on this device. Exported backup files are not affected. Continue?",
+    "wiped": "All data deleted"
+  },
+  "plan": {
+    "free": "Free",
+    "pro": "Migrano Pro",
+    "upgrade": "Upgrade"
+  },
+  "paywall": {
+    "title": "Take your diary to the doctor",
+    "benefits": [
+      "Insights: attack days, duration, triggers, symptoms",
+      "PDF report your neurologist can read in a minute",
+      "Medication-day warning at your chosen limit",
+      "PIN lock, encrypted backup and unlimited history"
+    ],
+    "plan": {
+      "annual": "Yearly",
+      "lifetime": "Lifetime"
+    },
+    "trial": "7 days free, then yearly",
+    "ctaTrial": "Start free trial",
+    "ctaBuy": "Buy once",
+    "legal": "Cancel anytime in your store account. Logging stays free forever.",
+    "restore": "Restore purchases",
+    "terms": "Terms",
+    "reasons": {
+      "insights": "Insights and the report are part of Pro.",
+      "history": "Free shows the last 90 days. Pro keeps everything.",
+      "pin": "The PIN lock is part of Pro.",
+      "backup": "Backup and import are part of Pro.",
+      "onboarding": "",
+      "settings": "",
+      "weather": "Air pressure as a trigger is part of Pro.",
+      "health": "Apple Health export is part of Pro."
+    }
+  },
+  "onboarding": {
+    "steps": [
+      {
+        "title": "One tap when it starts",
+        "body": "\"Attack now\" starts the clock. Intensity, triggers and medication can wait until you feel better."
+      },
+      {
+        "title": "Private by design",
+        "body": "No account, no cloud, no tracking. Your diary lives on this phone, and only you can export it."
+      },
+      {
+        "title": "Made for the doctor's visit",
+        "body": "Attack days, medication days, triggers and a PDF report — the things a neurologist actually asks for."
+      }
+    ],
+    "next": "Next",
+    "skip": "Skip",
+    "start": "Get started",
+    "welcome": "Welcome to Migrano",
+    "welcomeBody": "Choose your language and tell us what to call you.",
+    "name": "First name",
+    "namePh": "Your first name (optional)",
+    "setupTitle": "Set up your diary {{name}}",
+    "attacksQ": "How many attacks do you have per month?",
+    "attacks": {
+      "0-3": "0–3",
+      "4-7": "4–7",
+      "8-14": "8–14",
+      "15+": "15 or more"
+    },
+    "medsQ": "Which acute medication do you use?",
+    "meds": {
+      "triptan": "Triptan",
+      "ibuprofen": "Ibuprofen",
+      "paracetamol": "Paracetamol",
+      "aspirin": "Aspirin"
+    },
+    "medsOther": "Other medication…",
+    "medsHint": "You can change this any time under Medication. Migrano never gives dosing advice.",
+    "widgetTitle": "One tap from the home screen",
+    "widgetBody": "The Attack now widget starts an attack without opening the app – useful when the pain is at its worst.",
+    "widgetLater": "You can add it later: Settings → Widget → Add.",
+    "extrasTitle": "Extras",
+    "extrasBody": "Optional. All three are part of Pro – they switch on the moment you start the free trial.",
+    "extrasNote": "You can change all of this in Settings at any time."
+  },
+  "lang": {
+    "en": "English",
+    "da": "Dansk",
+    "de": "Deutsch",
+    "sv": "Svenska",
+    "nb": "Norsk"
+  },
+  "diary": {
+    "groups": {
+      "trigger": "Triggers",
+      "symptom": "Symptoms",
+      "relief": "What helped",
+      "location": "Location"
+    },
+    "tags": {
+      "trigger": {
+        "stress": "Stress",
+        "sleep_lack": "Too little sleep",
+        "sleep_excess": "Too much sleep",
+        "skipped_meal": "Skipped meal",
+        "dehydration": "Dehydration",
+        "alcohol": "Alcohol",
+        "caffeine": "Caffeine",
+        "chocolate": "Chocolate",
+        "cheese": "Cheese",
+        "menstruation": "Menstruation",
+        "weather": "Weather change",
+        "bright_light": "Bright light",
+        "noise": "Noise",
+        "smells": "Smells",
+        "screen_time": "Screen time",
+        "exertion": "Physical exertion",
+        "neck_tension": "Neck tension",
+        "travel": "Travel"
+      },
+      "symptom": {
+        "aura_visual": "Aura (visual)",
+        "aura_sensory": "Aura (sensory/speech)",
+        "throbbing": "Throbbing",
+        "one_sided": "One-sided",
+        "nausea": "Nausea",
+        "vomiting": "Vomiting",
+        "photophobia": "Light sensitivity",
+        "phonophobia": "Sound sensitivity",
+        "osmophobia": "Smell sensitivity",
+        "neck_pain": "Neck pain",
+        "concentration": "Hard to concentrate",
+        "fatigue": "Fatigue",
+        "worse_movement": "Worse with movement"
+      },
+      "relief": {
+        "sleep": "Sleep",
+        "dark_room": "Dark room",
+        "cold": "Cold",
+        "heat": "Heat",
+        "water": "Water",
+        "food": "Food",
+        "caffeine": "Caffeine",
+        "fresh_air": "Fresh air",
+        "rest": "Rest"
+      },
+      "location": {
+        "left": "Left",
+        "right": "Right",
+        "both": "Both sides",
+        "forehead": "Forehead",
+        "behind_eye": "Behind the eye",
+        "neck": "Neck",
+        "top": "Top of head"
+      }
+    }
+  },
+  "medDays": {
+    "title": "Medication days",
+    "what": "A medication day is a day you took acute (attack) medication – triptans, painkillers or combinations. Migrano counts days, not pills.",
+    "why": "Taking acute medication on 10 or more days a month (15 for simple painkillers) for three months can itself cause headache – doctors call it medication-overuse headache. The count helps you notice early and talk to your doctor in time.",
+    "yourLimit": "Your limit: {{n}} days a month",
+    "limitHint": "Change it under Settings. Migrano only counts and tells you when you reach it.",
+    "disclaimer": "This is not a diagnosis. Never stop or change medication without talking to your doctor."
+  },
+  "widget": {
+    "title": "Attack now widget",
+    "attackNow": "Attack now",
+    "openAttack": "Attack ongoing",
+    "ongoing": "Attack ongoing",
+    "noData": "No attacks logged yet",
+    "settingsHint": "Start an attack from the Home Screen or Lock Screen",
+    "guideBtn": "Add",
+    "previewLine1": "12 days without an attack",
+    "previewLine2": "2 attack days · 1 medication day",
+    "intro": "One tap on the widget starts the clock – no need to find the app first.",
+    "stepsIos": [
+      "Touch and hold an empty spot on your Home Screen until the apps jiggle.",
+      "Tap + (top left) and search for Migrano.",
+      "Choose the small or medium widget and tap Add Widget."
+    ],
+    "stepsAndroid": [
+      "Touch and hold an empty spot on your home screen.",
+      "Tap Widgets and find Migrano.",
+      "Drag the widget onto your home screen."
+    ],
+    "lockscreen": "Lock Screen: touch and hold the Lock Screen → Customize → tap the widget area → Migrano."
+  },
+  "weather": {
+    "title": "Air pressure",
+    "hint": "Track daily air pressure for your place – no location access needed.",
+    "choose": "Choose place",
+    "changePlace": "Change place",
+    "on": "On · {{place}}",
+    "off": "Air pressure tracking turned off",
+    "pickTitle": "Your place",
+    "pickHint": "Type a city or town. Only its coordinates are sent to the weather service (Open-Meteo) – never your device location.",
+    "placePh": "City, e.g. Viborg",
+    "searchFailed": "Search failed – check your connection",
+    "privacy": "Open-Meteo is a free, open weather service without accounts or tracking. The pressure history is stored on your device only.",
+    "pressureNow": "Air pressure {{p}} hPa",
+    "noData": "Fetching air pressure…",
+    "falling": "Falling {{d}} hPa since yesterday",
+    "rising": "Rising {{d}} hPa since yesterday",
+    "stable": "Steady since yesterday",
+    "whatIsIt": "What does it mean?",
+    "infoTitle": "About air pressure",
+    "infoWhat": "Air pressure (hPa) is the weight of the atmosphere. Around 1013 hPa is average; rising pressure usually means settled weather, falling pressure means a front is coming.",
+    "infoWhy": "Many people with migraine report attacks when the pressure drops quickly (a fall of 5 hPa or more within a day), but studies disagree and the effect differs from person to person. The absolute value matters less than the change.",
+    "infoApp": "Migrano stores the daily mean for your place and compares the days your attacks started with all other days. The pattern card and the doctor's report show that comparison – nothing more.",
+    "infoDisclaimer": "This is a description of your own log, not a medical statement. Talk to your doctor about what it means for you."
+  },
+  "health": {
+    "title": "Apple Health",
+    "hint": "Write finished attacks to Apple Health as headache entries.",
+    "on": "On · attacks are written as headache entries",
+    "offToast": "Apple Health export turned off (existing entries stay in Health)",
+    "denied": "Apple Health access was not granted. You can change it in the Health app under Sharing.",
+    "synced": "{{n}} attacks written to Apple Health"
+  },
+  "learn": {
+    "weekday": "{{pct}}% of your attacks started on a {{day}}.",
+    "time": "Your attacks most often start in the {{part}} ({{pct}}%).",
+    "fieldLower": "The day before an attack your {{field}} averaged {{before}}, against {{calm}} before calm days.",
+    "fieldHigher": "The day before an attack your {{field}} averaged {{before}}, against {{calm}} before calm days.",
+    "period": "{{pct}}% of your attacks started within a day of your period.",
+    "pressureYes": "{{pct}}% of your attacks started on a day the air pressure fell at least {{hpa}} hPa – only {{all}}% of all days had such a drop.",
+    "pressureNo": "Falling air pressure does not stand out: {{pct}}% of your attacks started on a falling-pressure day, about the same as all days ({{all}}%).",
+    "trigger": "\"{{tag}}\" is the trigger you log most often – on {{pct}}% of attacks.",
+    "symptom": "\"{{tag}}\" comes with {{pct}}% of your attacks.",
+    "medDays": "You reached {{n}} medication days this month – your limit is {{limit}}. Worth mentioning to your doctor."
+  }
+}

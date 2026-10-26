@@ -1,0 +1,15 @@
+{
+    "appId": "com.ilumie.tinnara",
+    "appName": "Tinnara",
+    "appSlug": "tinnara",
+    "brandColor": "#2E3B55",
+    "supportEmail": "support@tinnara.app",
+    "privacyUrl": "https://tinnara.app/privacy",
+    "termsUrl": "https://tinnara.app/terms",
+    "revenueCat": {
+        "ios": "appl_TODO",
+        "android": "goog_TODO",
+        "entitlement": "pro"
+    },
+    "dailyReminderHour": 20
+}

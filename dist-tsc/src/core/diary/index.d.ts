@@ -1,0 +1,160 @@
+import type { DiaryConfig, Episode, Tag, Medication, DailyCheckin, CheckinStatus } from "./types";
+export * from "./types";
+export { diaryMigrations } from "./migrations";
+export { seedMigration } from "./seed";
+export * from "./weather";
+import { type PressurePattern } from "./weather";
+/** Called once by the domain before any screen renders. */
+export declare function configureDiary(c: DiaryConfig): void;
+export declare function diaryConfig(): DiaryConfig;
+export declare function openEpisode(): Promise<Episode | null>;
+/** Starts a new open episode (the "attack now" button). Returns the existing one if one is already open. */
+export declare function startEpisode(startedAt?: string): Promise<Episode>;
+export declare function endEpisode(id: string, endedAt?: string): Promise<void>;
+export declare function updateEpisode(id: string, patch: Partial<Pick<Episode, "startedAt" | "endedAt" | "intensity" | "note" | "extra">>): Promise<void>;
+export declare function deleteEpisode(id: string): Promise<void>;
+export declare function listEpisodes(fromIso?: string, toIso?: string): Promise<Episode[]>;
+export declare function listTags(groupKey?: string): Promise<Tag[]>;
+export declare function episodeTagIds(episodeId: string): Promise<string[]>;
+export declare function setEpisodeTags(episodeId: string, tagIds: string[]): Promise<void>;
+/** "Other…" → a user tag in that group. */
+export declare function addUserTag(groupKey: string, label: string): Promise<Tag>;
+export declare function setTagHidden(tagId: string, hidden: boolean): Promise<void>;
+export declare function listMedications(includeHidden?: boolean): Promise<Medication[]>;
+export declare function addMedication(name: string, kind?: Medication["kind"], unit?: string | null): Promise<string>;
+export type Intake = {
+    id: string;
+    episodeId: string | null;
+    medicationId: string;
+    takenAt: string;
+    amount: number | null;
+    name: string;
+    kind: string;
+};
+export declare function listIntakes(episodeId: string): Promise<Intake[]>;
+export declare function deleteIntake(id: string): Promise<void>;
+export declare function updateMedication(id: string, patch: Partial<Pick<Medication, "name" | "kind" | "unit" | "isHidden">>): Promise<void>;
+export declare function logIntake(medicationId: string, episodeId: string | null, takenAt?: string, amount?: number | null): Promise<void>;
+/** Distinct calendar days with at least one acute intake in [fromIso, toIso). The number the warning compares against. */
+export declare function medicationDays(fromIso: string, toIso: string): Promise<number>;
+export declare function getCheckin(date: string): Promise<DailyCheckin | null>;
+export declare function setCheckin(date: string, status: CheckinStatus, extra?: Record<string, unknown> | null, note?: string | null): Promise<void>;
+export declare function listCheckins(fromDate: string, toDate: string): Promise<DailyCheckin[]>;
+/** Distinct calendar days touched by an episode in [fromIso, toIso) — multi-day episodes count every day. */
+export declare function episodeDays(fromIso: string, toIso: string): Promise<number>;
+/** Tag frequency across the episodes in a range: share of episodes carrying each tag, per group. */
+export declare function tagFrequency(fromIso: string, toIso: string): Promise<{
+    groupKey: string;
+    tagId: string;
+    labelKey: string | null;
+    label: string | null;
+    n: number;
+    total: number;
+}[]>;
+/** Per-month episode counts and attack days for the last `months` months, oldest first. */
+export declare function monthlySeries(months?: number): Promise<{
+    month: string;
+    episodes: number;
+    attackDays: number;
+}[]>;
+export declare function episodeSummary(fromIso: string, toIso: string): Promise<{
+    episodes: number;
+    attackDays: number;
+    avgHours: number | null;
+    avgIntensity: number | null;
+    medDays: number;
+}>;
+export declare const monthRange: (d?: Date) => {
+    fromIso: string;
+    toIso: string;
+};
+/** All-time usage count per tag (for "your most frequent" in the attack journey). */
+export declare function tagUsage(): Promise<Record<string, number>>;
+/** Most recent closed episode end (ISO) or null. */
+export declare function lastEpisodeEnd(): Promise<string | null>;
+/** Whole days since the last episode ended (0 if an episode is open or ended today); null if no episodes at all. */
+export declare function daysSinceLastEpisode(): Promise<number | null>;
+/** Medication days for each of the last `months` months, oldest first. */
+export declare function medDaysByMonth(months?: number): Promise<{
+    month: string;
+    medDays: number;
+}[]>;
+/** This episode vs. the average of all other closed episodes (duration, intensity). */
+export declare function episodeComparison(id: string): Promise<{
+    hours: number | null;
+    intensity: number | null;
+    avgHours: number | null;
+    avgIntensity: number | null;
+    n: number;
+} | null>;
+export type Patterns = {
+    attacks: number;
+    checkins: number;
+    /** weekday 0-6 (Sunday=0) with the most attack starts and its share, when it stands out */
+    weekday: {
+        day: number;
+        share: number;
+    } | null;
+    /** part of day with most starts: "night" | "morning" | "afternoon" | "evening" */
+    timeOfDay: {
+        part: "night" | "morning" | "afternoon" | "evening";
+        share: number;
+    } | null;
+    /** per check-in field: avg the day before an attack day vs. before a calm day */
+    fields: {
+        key: string;
+        beforeAttack: number;
+        beforeCalm: number;
+        n: number;
+    }[];
+    /** share of attacks starting on a period day (±1) when period tracking has data */
+    period: {
+        share: number;
+        n: number;
+    } | null;
+    /** attacks on a falling-pressure day vs. all tracked days (needs weather tracking on) */
+    pressure: PressurePattern;
+};
+/**
+ * Descriptive patterns only: where do attacks cluster (weekday, time of day) and how did the night before look.
+ * No causality claims — the UI phrases everything as "your attacks have often…".
+ */
+export declare function patterns(days?: number): Promise<Patterns>;
+/** Closed episodes whose health sample is missing or older than the last edit. */
+export declare function episodesNeedingHealthSync(): Promise<Episode[]>;
+export declare function markHealthSynced(id: string, uuid: string | null): Promise<void>;
+export declare function clearHealthSync(): Promise<void>;
+/** One numeric check-in field per day in [fromDate, toDate] (local YYYY-MM-DD), oldest first. Days without a value are left out. */
+export declare function checkinSeries(key: string, fromDate: string, toDate: string): Promise<{
+    date: string;
+    v: number;
+}[]>;
+/** Average of a check-in field per calendar month for the last `months` months, oldest first (null = no data). */
+export declare function checkinMonthly(key: string, months?: number): Promise<{
+    month: string;
+    avg: number | null;
+    n: number;
+}[]>;
+export type Contrast = {
+    key: string;
+    lag: 0 | 1;
+    hi: number;
+    lo: number;
+    nHi: number;
+    nLo: number;
+};
+/**
+ * Descriptive contrast: the average of `target` on days where another field was high vs. low.
+ * lag 1 compares with the field's value the day before (e.g. loud noise yesterday → today).
+ * High/low = top ~30% / bottom ~40% of that field's own scale. Needs ≥4 days on each side; no statistics beyond that.
+ */
+export declare function checkinContrast(target: string, others: {
+    key: string;
+    lag?: 0 | 1;
+}[], days?: number): Promise<Contrast[]>;
+/** Average of a field over the last `days` days vs. the `days` before that (trend line on Home / Insights). */
+export declare function checkinTrend(key: string, days?: number): Promise<{
+    now: number | null;
+    before: number | null;
+    nNow: number;
+}>;

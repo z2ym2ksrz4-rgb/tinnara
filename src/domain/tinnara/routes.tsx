@@ -1,0 +1,78 @@
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { App as CapApp } from "@capacitor/app";
+import { Capacitor } from "@capacitor/core";
+import { LocalNotifications } from "@capacitor/local-notifications";
+import { startEpisode, openEpisode, endEpisode } from "@/core/diary";
+import { ensurePermission } from "@/core/notifications";
+import { useSettings } from "@/core/settings";
+import { Home } from "./screens/Home";
+import { Calendar } from "./screens/Calendar";
+import { Insights } from "./screens/Insights";
+import { EpisodeSheet } from "./screens/EpisodeSheet";
+import { MedicationsSheet } from "./screens/Medications";
+import { InfoSheets } from "./screens/InfoSheets";
+import { replanReminders } from "./reminders";
+import { useUi } from "./store";
+
+export type DomainTab = "home" | "calendar" | "insights";
+export const domainTabs: { key: DomainTab; labelKey: string }[] = [
+  { key: "home", labelKey: "nav.home" }, { key: "calendar", labelKey: "nav.calendar" }, { key: "insights", labelKey: "nav.insights" },
+];
+
+/**
+ * Deep links (widget, notification tap):  tinnara://episode/new  starts a spike and opens the sheet,
+ * tinnara://episode/open  opens the current spike. Handled here so the widget can stay dumb.
+ */
+async function handleUrl(url: string) {
+  if (url.includes("episode/new")) { const existed = await openEpisode(); const e = await startEpisode(); useUi.getState().bump(); useUi.getState().openEpisode(e.id, existed ? "full" : "quick"); }
+  else if (url.includes("episode/open")) { const e = await openEpisode(); if (e) useUi.getState().openEpisode(e.id, "full"); }
+}
+
+/** Notification action buttons: "Over now" ends the open spike without opening the app; "Still going" just dismisses. */
+async function setupNotificationActions(t: (k: string) => string) {
+  if (Capacitor.getPlatform() === "web") return;
+  try {
+    await LocalNotifications.registerActionTypes({ types: [{ id: "OPEN_EPISODE", actions: [
+      { id: "end", title: t("notif.actionEnd") },
+      { id: "continue", title: t("notif.actionContinue") },
+    ] }] });
+    await LocalNotifications.removeAllListeners();
+    await LocalNotifications.addListener("localNotificationActionPerformed", async (a) => {
+      const url = (a.notification.extra as { url?: string } | undefined)?.url;
+      if (a.actionId === "end") { const e = await openEpisode(); if (e) { await endEpisode(e.id); useUi.getState().bump(); } return; }
+      if (a.actionId === "continue") return;
+      if (url) void handleUrl(url);
+    });
+  } catch (e) { console.warn("[notif] actions", e); }
+}
+
+export function TinnaraRoutes({ tab }: { tab: DomainTab }) {
+  const { t } = useTranslation();
+  const version = useUi((s) => s.version);
+  const hour = useSettings((s) => s.dailyReminderHour);
+  const checkinReminder = useSettings((s) => s.checkinReminder);
+
+  useEffect(() => {
+    if (Capacitor.getPlatform() === "web") {
+      if (location.hash.startsWith("#tinnara://")) void handleUrl(location.hash.slice(1));
+      return;
+    }
+    const sub = CapApp.addListener("appUrlOpen", (e) => void handleUrl(e.url));
+    void CapApp.getLaunchUrl().then((l) => { if (l?.url) void handleUrl(l.url); });
+    return () => { void sub.then((h) => h.remove()); };
+  }, []);
+  useEffect(() => { void setupNotificationActions(t); }, [t]);
+  useEffect(() => { void ensurePermission().then(() => replanReminders(t)); }, [t, version, hour, checkinReminder]);
+
+  return (
+    <>
+      {tab === "home" && <Home />}
+      {tab === "calendar" && <Calendar />}
+      {tab === "insights" && <Insights />}
+      <EpisodeSheet />
+      <MedicationsSheet />
+      <InfoSheets />
+    </>
+  );
+}

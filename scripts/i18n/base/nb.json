@@ -1,0 +1,481 @@
+{
+  "nav": {
+    "home": "Hjem",
+    "calendar": "Kalender",
+    "insights": "Innsikt",
+    "settings": "Innstillinger"
+  },
+  "common": {
+    "add": "Legg til",
+    "cancel": "Avbryt",
+    "save": "Lagre",
+    "delete": "Slett",
+    "done": "Ferdig",
+    "other": "Annet…",
+    "typeOwn": "Skriv din egen",
+    "disclaimer": "Migrano er en dagbok for selvobservasjon, ikke medisinsk utstyr. Den stiller ikke diagnoser og gir ikke behandlingsråd. Snakk med legen din om det du logger.",
+    "edit": "Endre",
+    "off": "Slå av",
+    "on": "Slå på",
+    "search": "Søk"
+  },
+  "home": {
+    "title": "Migrano",
+    "attackNow": "Anfall nå",
+    "endAttack": "Anfallet er over",
+    "openSince": "Anfall pågår siden {{time}}",
+    "tapToEdit": "Trykk for detaljer eller for å avslutte",
+    "attackDays": "anfallsdager denne måneden",
+    "medDays": "medisindager denne måneden",
+    "recent": "Siste anfall",
+    "ongoing": "pågår",
+    "empty": "Ingen anfall logget ennå. Når ett starter, trykk på knappen – detaljene kan vente.",
+    "checkinTitle": "Hvordan var i dag?",
+    "checkin": {
+      "none": "Ingen hodepine",
+      "mild": "Mild",
+      "attack": "Anfall"
+    },
+    "fields": {
+      "sleep": "Søvn i natt",
+      "stress": "Stress i dag"
+    },
+    "medWarnTitle": "{{n}} medisindager denne måneden",
+    "medWarnBody": "Du valgte å få beskjed ved {{n}} dager. Hyppig akuttmedisin er verdt å ta opp med legen.",
+    "greeting": "Hei {{name}}",
+    "attackHint": "Ett trykk starter klokken",
+    "streak_one": "dag uten anfall",
+    "streak_other": "dager uten anfall",
+    "saveDay": "Lagre dagen",
+    "savedDay": "I dag er lagret",
+    "periodToday": "Mensen i dag",
+    "periodShort": "mensen",
+    "periodHint": "Trykk for å markere i dag"
+  },
+  "episode": {
+    "title": "Anfall",
+    "ongoing": "Anfall pågår",
+    "start": "Start",
+    "end": "Slutt",
+    "duration": "{{h}} t",
+    "intensity": "Intensitet",
+    "mildLbl": "mild",
+    "severeLbl": "kraftig",
+    "note": "Notat",
+    "notePh": "Annet som er verdt å huske",
+    "deleteConfirm": "Slette dette anfallet?",
+    "quickIntro": "Klokken går. Alt annet kan vente til du har det bedre.",
+    "howBad": "Hvor ille er det akkurat nå?",
+    "level": {
+      "mild": "Mildt",
+      "moderate": "Moderat",
+      "severe": "Kraftig"
+    },
+    "laterLink": "Fyll ut senere",
+    "journey": {
+      "trigger": "Hva tror du utløste det?",
+      "symptom": "Hva la du merke til?",
+      "meds": "Tok du noe?",
+      "note": "Noe å huske?",
+      "relief": "Hva hjalp?"
+    },
+    "more": "{{n}} flere…",
+    "skip": "Hopp over",
+    "editAll": "Endre alle detaljer",
+    "doneTitle": "Logget",
+    "tagsCount": "markeringer",
+    "cmpTitle": "Dette anfallet vs. gjennomsnittet ditt",
+    "cmpThis": "Dette anfallet",
+    "cmpAvg": "Gjennomsnitt av {{n}} anfall",
+    "cmpNeedMore": "Logg et par anfall til, så viser vi her hvordan dette ligger mot gjennomsnittet ditt.",
+    "cmpLocked": "Pro viser hvordan dette anfallet ligger mot gjennomsnittet ditt.",
+    "liveHint": "Når du avslutter anfallet, kommer noen korte spørsmål – svar på det du kan.",
+    "howBadNow": "Hvor ille er det akkurat nå?"
+  },
+  "calendar": {
+    "noAttacks": "Ingen anfall denne dagen."
+  },
+  "meds": {
+    "title": "Medisin",
+    "sub": "Dine egne preparater, ved navn. Migrano foreslår aldri medisiner eller doser.",
+    "name": "Navn",
+    "namePh": "f.eks. Sumatriptan 50 mg",
+    "acute": "Akutt",
+    "preventive": "Forebyggende",
+    "acuteHint": "Bare akuttmedisin teller som medisindager.",
+    "addFirst": "Legg til medisinen din",
+    "show": "Vis",
+    "hide": "Skjul"
+  },
+  "insights": {
+    "title": "Innsikt",
+    "lockedTitle": "Mønstre krever Pro",
+    "lockedBody": "Anfallsdager per måned, gjennomsnittlig varighet og intensitet, og hvilke triggere og symptomer som går igjen – pluss PDF-rapporten til legen.",
+    "attackDaysPerMonth": "Anfallsdager per måned, siste 12 måneder",
+    "range": {
+      "month": "Denne måneden",
+      "3m": "3 måneder",
+      "12m": "12 måneder"
+    },
+    "attacks": "anfall",
+    "avgHours": "snitt timer",
+    "avgIntensity": "snitt intensitet",
+    "medDays": "dager med akuttmedisin (din grense: {{n}})",
+    "shareOfAttacks": "andel av anfallene",
+    "noData": "Ikke nok data ennå.",
+    "disclaimer": "Andeler er enkle opptellinger av det du har logget – ikke bevis for årsak.",
+    "attackDays": "anfallsdager",
+    "patterns": "Mønstrene dine",
+    "patWeekday": "{{pct}} % av anfallene dine startet på en {{day}}",
+    "patTime": "{{pct}} % av anfallene dine startet om {{part}}",
+    "part": {
+      "night": "natten",
+      "morning": "morgenen",
+      "afternoon": "ettermiddagen",
+      "evening": "kvelden"
+    },
+    "patField": "{{field}} dagen før et anfall var i snitt {{before}} – mot {{calm}} før rolige dager",
+    "patFieldBasis": "Basert på {{n}} innsjekker før anfall",
+    "patPeriod": "{{pct}} % av anfallene dine startet innen en dag fra mensen",
+    "patBasis": "Basert på {{n}} anfall de siste 6 månedene",
+    "patNote": "Mønstre beskriver loggen din – de beviser ingen årsak. Ta dem med til legen.",
+    "patNeed": "Mønstre vises etter 5 anfall og 14 innsjekker ({{a}} anfall og {{c}} innsjekker igjen).",
+    "mohTitle": "Medisindager, siste 3 måneder",
+    "mohAlert": "{{n}}+ medisindager tre måneder på rad",
+    "mohBody": "Det mønsteret er verdt å snakke med legen om – det kan i seg selv gi hodepine.",
+    "mohShareBtn": "Del tekst til legen",
+    "mohShare": "Medisindager ({{app}}): {{months}}. Valgt grense: {{n}} dager/mnd.",
+    "mohHint": "Forblir rolig så lenge du er under {{n}} dager i måneden.",
+    "patPressure": "{{pct}}% av anfallene dine begynte på en dag med fallende lufttrykk (≥{{hpa}} hPa) – mot {{all}}% av alle dager.",
+    "learnTitle": "Slik ser det ut",
+    "learnNote": "Observasjoner fra din egen dagbok med vanlige ord. De beskriver – de forklarer ikke.",
+    "learnEmpty": "Når du har logget en håndfull anfall og daglige innsjekkinger, oppsummerer vi her hva som skiller seg ut."
+  },
+  "report": {
+    "title": "Hodepinedagbok – rapport",
+    "cta": "PDF-rapport",
+    "sub": "Én sides oversikt pluss én linje per anfall, formatert for legebesøket.",
+    "preset": {
+      "month": "Denne måneden",
+      "last": "Forrige måned",
+      "3m": "Siste 3 måneder",
+      "custom": "Velg datoer"
+    },
+    "from": "Fra",
+    "to": "Til",
+    "make": "Lag PDF",
+    "medDays": "Dager med akuttmedisin",
+    "attacks": "Anfall",
+    "hours": "Timer",
+    "intensityShort": "Int.",
+    "count": "Antall (andel)",
+    "footer": "Laget med {{app}} – en dagbok for selvobservasjon, ikke medisinsk utstyr",
+    "chartTitle": "Per måned",
+    "notesTitle": "Notater til legen",
+    "notesPh": "Spørsmål, endringer i medisin, annet…",
+    "pressureCol": "hPa (Δ)",
+    "pressureNote": "hPa = døgnmiddel for lufttrykk på stedet ditt, Δ = endring fra dagen før."
+  },
+  "notif": {
+    "checkinTitle": "Hvordan var i dag?",
+    "checkinBody": "5 sekunders innsjekk holder dagboken komplett.",
+    "openTitle": "Er anfallet over?",
+    "openBody": "Et anfall har vært åpent i 24 timer. Trykk for å sette sluttid.",
+    "actionEnd": "Over nå",
+    "actionContinue": "Pågår"
+  },
+  "lock": {
+    "title": "Skriv inn PIN",
+    "hint": "Dagboken din er låst. Skriv inn PIN-koden på 4–6 sifre."
+  },
+  "settings": {
+    "language": "Språk",
+    "privacy": "Personvern",
+    "privacyPolicy": "Personvernerklæring",
+    "support": "Support",
+    "diary": "Dagbok",
+    "manage": "Administrer",
+    "medThreshold": "Si fra om medisindager ved",
+    "daysPerMonth": "{{n}} dager/mnd",
+    "medThresholdHint": "Mange retningslinjer nevner 10 eller 15 dager i måneden som noe å ta opp med legen. Velg det din bruker.",
+    "reminders": "Påminnelser",
+    "checkinReminder": "Daglig innsjekk-påminnelse",
+    "reminderTime": "Tidspunkt",
+    "openEpisodeReminder": "Minn meg på det hvis et anfall står åpent i 24 t",
+    "pin": "PIN-lås",
+    "pinOn": "På – spør etter 1 minutt i bakgrunnen",
+    "pinOff": "Av",
+    "pinSetup": "Sett PIN",
+    "pinRemove": "Fjern",
+    "pinRemoved": "PIN fjernet",
+    "pinSet": "PIN satt",
+    "pinNew": "Ny PIN (4–6 sifre)",
+    "pinRepeat": "Gjenta PIN",
+    "pinMismatch": "PIN-kodene er ikke like",
+    "pinHint": "En glemt PIN kan ikke gjenopprettes – bare sletting av alle data låser opp appen.",
+    "data": "Dine data",
+    "dataNote": "Alt blir på denne telefonen. Sikkerhetskopien er kryptert med passordfrasen din og deles av deg selv – vi laster aldri opp noe.",
+    "about": "Om",
+    "feedback": "Send tilbakemelding",
+    "restored": "Kjøp gjenopprettet",
+    "proThanks": "Takk for at du støtter Migrano.",
+    "freeHint": "Ubegrenset logging. Pro gir innsikt, PDF-rapport og PIN-lås.",
+    "profile": "Profil",
+    "whatIsThis": "Hva er dette?",
+    "cycleTracking": "Registrer menstruasjonssyklus",
+    "cycleHint": "Legger til \"Mensen i dag\" i innsjekken og viser andelen anfall rundt mensen.",
+    "widget": "Widget",
+    "planLifetime": "Livstid – fornyes ikke",
+    "planYearly": "Årlig · fornyes {{date}}",
+    "planTrial": "Gratis prøveperiode til {{date}}",
+    "planRenews": "Fornyes {{date}}",
+    "planEnds": "Utløper {{date}}",
+    "switchLifetime": "Bytt til livstid",
+    "switchLifetimeHint": "Kjøp livstid én gang, og si deretter opp årsplanen under Administrer abonnement – butikken bytter ikke automatisk.",
+    "manageSub": "Administrer abonnement",
+    "planStore": "Kjøpt via {{store}}",
+    "triggers": "Triggere og helse"
+  },
+  "backup": {
+    "export": "Eksporter kryptert sikkerhetskopi",
+    "import": "Importer sikkerhetskopi",
+    "passphrase": "Velg en passordfrase for sikkerhetskopien",
+    "passphraseShort": "Passordfrase",
+    "file": "Sikkerhetskopi",
+    "importHint": "Nyeste oppføring vinner hvis samme anfall finnes på begge telefonene.",
+    "wrongApp": "Denne sikkerhetskopien tilhører en annen app",
+    "exported": "Sikkerhetskopi eksportert",
+    "imported": "Sikkerhetskopi importert",
+    "importFailed": "Kunne ikke importere – feil passordfrase eller fil?",
+    "wipe": "Slett alle data",
+    "wipeConfirm": "Dette sletter permanent alt appen har lagret på denne enheten. Eksporterte sikkerhetskopier påvirkes ikke. Fortsette?",
+    "wiped": "Alle data slettet"
+  },
+  "plan": {
+    "free": "Gratis",
+    "pro": "Migrano Pro",
+    "upgrade": "Oppgrader"
+  },
+  "paywall": {
+    "title": "Ta med dagboken til legen",
+    "benefits": [
+      "Innsikt: anfallsdager, varighet, triggere, symptomer",
+      "PDF-rapport nevrologen din leser på ett minutt",
+      "Varsel om medisindager ved din valgte grense",
+      "PIN-lås, kryptert sikkerhetskopi og ubegrenset historikk"
+    ],
+    "plan": {
+      "annual": "Årlig",
+      "lifetime": "Livstid"
+    },
+    "trial": "7 dager gratis, deretter årlig",
+    "ctaTrial": "Start gratis prøveperiode",
+    "ctaBuy": "Kjøp én gang",
+    "legal": "Avslutt når som helst i butikkontoen din. Logging er gratis for alltid.",
+    "restore": "Gjenopprett kjøp",
+    "terms": "Vilkår",
+    "reasons": {
+      "insights": "Innsikt og rapporten er en del av Pro.",
+      "history": "Gratis viser de siste 90 dagene. Pro beholder alt.",
+      "pin": "PIN-låsen er en del av Pro.",
+      "backup": "Sikkerhetskopi og import er en del av Pro.",
+      "onboarding": "",
+      "settings": "",
+      "weather": "Lufttrykk som trigger er en del av Pro.",
+      "health": "Eksport til Apple Helse er en del av Pro."
+    }
+  },
+  "onboarding": {
+    "steps": [
+      {
+        "title": "Ett trykk når det starter",
+        "body": "\"Anfall nå\" starter klokken. Intensitet, triggere og medisin kan vente til du har det bedre."
+      },
+      {
+        "title": "Privat fra bunnen av",
+        "body": "Ingen konto, ingen sky, ingen sporing. Dagboken din bor på denne telefonen, og bare du kan eksportere den."
+      },
+      {
+        "title": "Laget for legebesøket",
+        "body": "Anfallsdager, medisindager, triggere og en PDF-rapport – det en nevrolog faktisk spør om."
+      }
+    ],
+    "next": "Neste",
+    "skip": "Hopp over",
+    "start": "Kom i gang",
+    "welcome": "Velkommen til Migrano",
+    "welcomeBody": "Velg språk og fortell oss hva vi skal kalle deg.",
+    "name": "Fornavn",
+    "namePh": "Fornavnet ditt (valgfritt)",
+    "setupTitle": "Sett opp dagboken din {{name}}",
+    "attacksQ": "Hvor mange anfall har du i måneden?",
+    "attacks": {
+      "0-3": "0–3",
+      "4-7": "4–7",
+      "8-14": "8–14",
+      "15+": "15 eller flere"
+    },
+    "medsQ": "Hvilken anfallsmedisin bruker du?",
+    "meds": {
+      "triptan": "Triptan",
+      "ibuprofen": "Ibuprofen",
+      "paracetamol": "Paracetamol",
+      "aspirin": "Acetylsalisylsyre"
+    },
+    "medsOther": "Annen medisin…",
+    "medsHint": "Kan alltid endres under Medisin. Migrano gir aldri doseringsråd.",
+    "widgetTitle": "Ett trykk fra hjemskjermen",
+    "widgetBody": "Anfall nå-widgeten starter et anfall uten å åpne appen – praktisk når smerten er verst.",
+    "widgetLater": "Du kan legge den til senere: Innstillinger → Widget → Legg til.",
+    "extrasTitle": "Ekstra",
+    "extrasBody": "Valgfritt. Alle tre er en del av Pro – de slås på i det øyeblikket du starter den gratis prøveperioden.",
+    "extrasNote": "Alt kan endres i Innstillinger når som helst."
+  },
+  "lang": {
+    "en": "English",
+    "da": "Dansk",
+    "de": "Deutsch",
+    "sv": "Svenska",
+    "nb": "Norsk"
+  },
+  "diary": {
+    "groups": {
+      "trigger": "Triggere",
+      "symptom": "Symptomer",
+      "relief": "Hva som hjalp",
+      "location": "Plassering"
+    },
+    "tags": {
+      "trigger": {
+        "stress": "Stress",
+        "sleep_lack": "For lite søvn",
+        "sleep_excess": "For mye søvn",
+        "skipped_meal": "Hoppet over måltid",
+        "dehydration": "Væskemangel",
+        "alcohol": "Alkohol",
+        "caffeine": "Koffein",
+        "chocolate": "Sjokolade",
+        "cheese": "Ost",
+        "menstruation": "Menstruasjon",
+        "weather": "Værskifte",
+        "bright_light": "Sterkt lys",
+        "noise": "Støy",
+        "smells": "Lukter",
+        "screen_time": "Skjermtid",
+        "exertion": "Fysisk anstrengelse",
+        "neck_tension": "Nakkespenninger",
+        "travel": "Reise"
+      },
+      "symptom": {
+        "aura_visual": "Aura (syn)",
+        "aura_sensory": "Aura (følelse/tale)",
+        "throbbing": "Pulserende",
+        "one_sided": "Ensidig",
+        "nausea": "Kvalme",
+        "vomiting": "Oppkast",
+        "photophobia": "Lysfølsom",
+        "phonophobia": "Lydfølsom",
+        "osmophobia": "Luktfølsom",
+        "neck_pain": "Nakkesmerter",
+        "concentration": "Vanskelig å konsentrere seg",
+        "fatigue": "Tretthet",
+        "worse_movement": "Verre ved bevegelse"
+      },
+      "relief": {
+        "sleep": "Søvn",
+        "dark_room": "Mørkt rom",
+        "cold": "Kulde",
+        "heat": "Varme",
+        "water": "Vann",
+        "food": "Mat",
+        "caffeine": "Koffein",
+        "fresh_air": "Frisk luft",
+        "rest": "Hvile"
+      },
+      "location": {
+        "left": "Venstre",
+        "right": "Høyre",
+        "both": "Begge sider",
+        "forehead": "Panne",
+        "behind_eye": "Bak øyet",
+        "neck": "Nakke",
+        "top": "Isse"
+      }
+    }
+  },
+  "medDays": {
+    "title": "Medisindager",
+    "what": "En medisindag er en dag du tok anfallsmedisin – triptaner, smertestillende eller kombinasjoner. Migrano teller dager, ikke tabletter.",
+    "why": "Anfallsmedisin på 10 eller flere dager i måneden (15 for vanlige smertestillende) i tre måneder kan i seg selv gi hodepine – legene kaller det medikamentoverforbrukshodepine. Tallet hjelper deg å oppdage det tidlig og snakke med legen i tide.",
+    "yourLimit": "Din grense: {{n}} dager i måneden",
+    "limitHint": "Kan endres under Innstillinger. Migrano teller bare og sier fra når du når den.",
+    "disclaimer": "Dette er ikke en diagnose. Stopp eller endre aldri medisin uten å snakke med legen din."
+  },
+  "widget": {
+    "title": "Anfall nå-widget",
+    "attackNow": "Anfall nå",
+    "openAttack": "Anfall pågår",
+    "ongoing": "Anfall pågår",
+    "noData": "Ingen anfall logget ennå",
+    "settingsHint": "Start et anfall fra hjemskjermen eller låseskjermen",
+    "guideBtn": "Legg til",
+    "previewLine1": "12 dager uten anfall",
+    "previewLine2": "2 anfallsdager · 1 medisindag",
+    "intro": "Ett trykk på widgeten starter klokken – du trenger ikke finne appen først.",
+    "stepsIos": [
+      "Hold fingeren på et tomt sted på hjemskjermen til appene rister.",
+      "Trykk på + (øverst til venstre) og søk etter Migrano.",
+      "Velg den lille eller mellomstore widgeten og trykk Legg til widget."
+    ],
+    "stepsAndroid": [
+      "Hold fingeren på et tomt sted på startskjermen.",
+      "Trykk på Widgeter og finn Migrano.",
+      "Dra widgeten inn på startskjermen."
+    ],
+    "lockscreen": "Låseskjerm: hold fingeren på låseskjermen → Tilpass → trykk på widget-området → Migrano."
+  },
+  "weather": {
+    "title": "Lufttrykk",
+    "hint": "Følg dagens lufttrykk for stedet ditt – ingen posisjonstilgang nødvendig.",
+    "choose": "Velg sted",
+    "changePlace": "Bytt sted",
+    "on": "På · {{place}}",
+    "off": "Lufttrykk-sporing slått av",
+    "pickTitle": "Ditt sted",
+    "pickHint": "Skriv en by. Bare byens koordinater sendes til værtjenesten (Open-Meteo) – aldri enhetens posisjon.",
+    "placePh": "By, f.eks. Bergen",
+    "searchFailed": "Søket mislyktes – sjekk tilkoblingen",
+    "privacy": "Open-Meteo er en gratis, åpen værtjeneste uten konto eller sporing. Trykkhistorikken lagres bare på enheten din.",
+    "pressureNow": "Lufttrykk {{p}} hPa",
+    "noData": "Henter lufttrykk…",
+    "falling": "Falt {{d}} hPa siden i går",
+    "rising": "Steget {{d}} hPa siden i går",
+    "stable": "Stabilt siden i går",
+    "whatIsIt": "Hva betyr det?",
+    "infoTitle": "Om lufttrykk",
+    "infoWhat": "Lufttrykk (hPa) er atmosfærens vekt. Rundt 1013 hPa er gjennomsnitt; stigende trykk betyr som regel rolig vær, fallende trykk at en front er på vei.",
+    "infoWhy": "Mange med migrene opplever anfall når trykket faller raskt (et fall på 5 hPa eller mer i løpet av et døgn), men studiene er uenige, og det varierer fra person til person. Endringen betyr mer enn selve tallet.",
+    "infoApp": "Migrano lagrer døgnmiddel for stedet ditt og sammenligner dagene anfallene dine begynte med alle andre dager. Mønsterkortet og legerapporten viser den sammenligningen – ikke mer.",
+    "infoDisclaimer": "Dette er en beskrivelse av din egen dagbok, ikke en medisinsk uttalelse. Snakk med legen din om hva det betyr for deg."
+  },
+  "health": {
+    "title": "Apple Helse",
+    "hint": "Skriv avsluttede anfall til Apple Helse som hodepine-oppføringer.",
+    "on": "På · anfall skrives som hodepine-oppføringer",
+    "offToast": "Eksport til Apple Helse slått av (eksisterende oppføringer blir i Helse)",
+    "denied": "Tilgang til Apple Helse ble ikke gitt. Du kan endre det i Helse-appen under Deling.",
+    "synced": "{{n}} anfall skrevet til Apple Helse"
+  },
+  "learn": {
+    "weekday": "{{pct}}% av anfallene dine begynte på en {{day}}.",
+    "time": "Anfallene dine begynner oftest om {{part}} ({{pct}}%).",
+    "fieldLower": "Dagen før et anfall lå din {{field}} i snitt på {{before}} mot {{calm}} før rolige dager.",
+    "fieldHigher": "Dagen før et anfall lå din {{field}} i snitt på {{before}} mot {{calm}} før rolige dager.",
+    "period": "{{pct}}% av anfallene dine begynte innen en dag fra menstruasjonen.",
+    "pressureYes": "{{pct}}% av anfallene dine begynte på en dag der lufttrykket falt minst {{hpa}} hPa – bare {{all}}% av alle dager hadde et slikt fall.",
+    "pressureNo": "Fallende lufttrykk skiller seg ikke ut: {{pct}}% av anfallene dine begynte på en dag med trykkfall, omtrent som alle dager ({{all}}%).",
+    "trigger": "\"{{tag}}\" er triggeren du oftest logger – ved {{pct}}% av anfallene.",
+    "symptom": "\"{{tag}}\" følger med {{pct}}% av anfallene dine.",
+    "medDays": "Du nådde {{n}} medisindager denne måneden – grensen din er {{limit}}. Verdt å nevne for legen."
+  }
+}

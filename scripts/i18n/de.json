@@ -1,0 +1,385 @@
+{
+  "common": {
+    "disclaimer": "Tinnara ist ein Tagebuch zur Selbstbeobachtung, kein Medizinprodukt. Es stellt keine Diagnosen und gibt keine Behandlungsempfehlungen. Besprechen Sie Ihre Einträge mit Ihrer Ärztin oder Ihrem Arzt."
+  },
+  "home": {
+    "title": "Tinnara",
+    "greeting": "Hallo {{name}}",
+    "todayIs": "Heute: {{word}}",
+    "savedDay": "Der Tag ist gespeichert",
+    "saveDay": "Tag speichern",
+    "louderNow": "Jetzt lauter",
+    "louderHint": "Schub festhalten – Details später",
+    "openSince": "Lauter seit {{time}}",
+    "tapToEdit": "Tippen zum Beenden oder für Details",
+    "endSpike": "Es hat sich beruhigt",
+    "weekTitle": "Letzte 7 Tage",
+    "avg7": "Ø Lautstärke",
+    "vsLastWeek": "ggü. der Vorwoche",
+    "spikesMonth_one": "Schub in diesem Monat",
+    "spikesMonth_other": "Schübe in diesem Monat",
+    "sparkEmpty": "Tragen Sie ein paar Tage ein, dann erscheint hier Ihre Kurve.",
+    "recent": "Letzte Schübe",
+    "ongoing": "läuft",
+    "empty": "Noch keine Schübe. Wenn es plötzlich lauter wird, tippen Sie auf Jetzt lauter.",
+    "checkinTitle": "Heute",
+    "checkin": {
+      "none": "Ruhiger Tag",
+      "mild": "Spürbarer Tag",
+      "attack": "Schwerer Tag"
+    },
+    "fields": {
+      "loudness": "Lautstärke",
+      "distress": "Belastung",
+      "sleep": "Schlaf letzte Nacht",
+      "stress": "Stress",
+      "noise": "Lärm heute"
+    },
+    "fieldHint": {
+      "distress": "1 gar nicht · 5 sehr",
+      "sleep": "1 schlecht · 5 gut",
+      "stress": "1 ruhig · 5 sehr",
+      "noise": "1 leise · 5 sehr laut"
+    },
+    "periodToday": "Periode heute",
+    "periodShort": "Periode",
+    "periodHint": "Tippen, um heute zu markieren"
+  },
+  "loud": {
+    "question": "Wie laut ist Ihr Tinnitus heute?",
+    "pick": "Zahl antippen",
+    "min": "0 · nicht spürbar",
+    "max": "10 · so laut wie es nur wird",
+    "level": {
+      "silent": "Nicht spürbar",
+      "low": "Leise",
+      "noticeable": "Spürbar",
+      "loud": "Laut",
+      "veryLoud": "Sehr laut"
+    },
+    "infoTitle": "Zur Skala 0–10",
+    "infoWhat": "Bewerten Sie, wie laut der Tinnitus den größten Teil des Tages war – nicht den schlimmsten Moment (dafür ist Jetzt lauter da). Die Zahl gehört Ihnen: Vergleichen Sie mit Ihren eigenen Tagen, nicht mit anderen.",
+    "infoScale": [
+      "0 – Sie bemerken ihn nicht",
+      "1–3 – da, wenn Sie hinhören",
+      "4–6 – spürbar, aber Sie können ihn ausblenden",
+      "7–8 – laut und schwer zu ignorieren",
+      "9–10 – so laut wie er überhaupt wird"
+    ],
+    "infoTip": "Tragen Sie möglichst jeden Tag zur selben Zeit ein, zum Beispiel abends. Die Belastung wird getrennt erfasst, weil sie oft stärker schwankt als die Lautstärke selbst."
+  },
+  "episode": {
+    "title": "Schub",
+    "ongoing": "Gerade lauter",
+    "intensity": "Höchste Lautstärke",
+    "mildLbl": "etwas lauter",
+    "severeLbl": "sehr laut",
+    "deleteConfirm": "Diesen Schub löschen?",
+    "quickIntro": "Erfasst. Alles andere kann warten, bis es sich beruhigt hat.",
+    "howBad": "Wie laut ist es gerade?",
+    "howBadNow": "Wie laut ist es gerade?",
+    "level": {
+      "mild": "Etwas lauter",
+      "moderate": "Viel lauter",
+      "severe": "Sehr laut"
+    },
+    "journey": {
+      "sound": "Wie klingt er?",
+      "trigger": "Was hat es Ihrer Meinung nach ausgelöst?",
+      "symptom": "Was ist Ihnen noch aufgefallen?",
+      "relief": "Was hat geholfen?",
+      "meds": "Haben Sie etwas genommen oder benutzt?",
+      "note": "Noch etwas festhalten?"
+    },
+    "cmpTitle": "Dieser Schub im Vergleich zu Ihrem Durchschnitt",
+    "cmpThis": "Dieser Schub",
+    "cmpAvg": "Durchschnitt aus {{n}} Schüben",
+    "cmpNeedMore": "Nach ein paar weiteren Schüben sehen Sie hier den Vergleich mit Ihrem Durchschnitt.",
+    "cmpLocked": "Pro zeigt, wie dieser Schub im Vergleich zu Ihrem Durchschnitt liegt.",
+    "liveHint": "Wenn es sich beruhigt hat, folgen ein paar kurze Fragen – beantworten Sie, was Sie können."
+  },
+  "calendar": {
+    "spike": "Schub",
+    "loudness": "Lautstärke {{n}} – {{word}}",
+    "noCheckin": "Kein Eintrag an diesem Tag."
+  },
+  "meds": {
+    "title": "Medikamente & Hilfsmittel",
+    "sub": "Ihre eigenen Medikamente, Nahrungsergänzungen und Hilfsmittel (z. B. Hörgerät oder Rauschgenerator) mit Namen. Tinnara schlägt nie Behandlungen oder Dosierungen vor.",
+    "namePh": "z. B. Melatonin oder Rauschgenerator",
+    "acute": "Bei Bedarf",
+    "preventive": "Regelmäßig",
+    "acuteHint": "Was Sie während eines Schubs verwendet haben, erfassen Sie in den letzten Schritten des Schubs.",
+    "addFirst": "Medikament oder Hilfsmittel hinzufügen"
+  },
+  "insights": {
+    "lockedTitle": "Ihre Kurve gibt es mit Pro",
+    "lockedBody": "Lautstärke über 90 Tage und pro Monat, wie Schlaf, Stress und Lärm mit lauteren Tagen zusammenhängen, welche Auslöser sich wiederholen – plus der PDF-Bericht für Ihre Ärztin oder Ihren Arzt.",
+    "loud90": "Lautstärke, letzte 90 Tage",
+    "loud90Hint": "Punkte = Ihre täglichen Einträge · Linie = 7-Tage-Durchschnitt",
+    "monthly": "Durchschnittliche Lautstärke pro Monat",
+    "avgLoud": "Ø Lautstärke (0–10)",
+    "avgDistress": "Ø Belastung (1–5)",
+    "hardDays": "schwere Tage (7+) von {{n}} erfassten",
+    "spikes": "Schübe",
+    "avgSpikeHours": "Ø Stunden pro Schub",
+    "shareOfSpikes": "Anteil der Schübe",
+    "disclaimer": "Durchschnitte und Anteile sind einfache Zählungen Ihrer Einträge, kein Beleg für Ursachen.",
+    "contrast": {
+      "sleep": "Nach guten Nächten (4–5) lag Ihr Tinnitus im Schnitt bei {{hi}} – nach schlechten Nächten (1–2) bei {{lo}}",
+      "stress": "An stressigen Tagen (4–5) lag er bei {{hi}} – an ruhigen Tagen (1–2) bei {{lo}}",
+      "noise": "Am Tag nach einem lauten Tag (4–5) lag er bei {{hi}} – nach leisen Tagen (1–2) bei {{lo}}"
+    },
+    "contrastBasis": "Grundlage: {{hi}} und {{lo}} Tage der letzten 6 Monate",
+    "patWeekday": "{{pct}} % Ihrer Schübe begannen an einem {{day}}",
+    "patTime": "{{pct}} % Ihrer Schübe begannen {{part}}",
+    "patPeriod": "{{pct}} % Ihrer Schübe begannen innerhalb eines Tages um Ihre Periode",
+    "patBasis": "Grundlage: {{n}} Schübe der letzten 6 Monate",
+    "patNeed": "Muster erscheinen nach etwa zwei Wochen täglicher Einträge.",
+    "patPressure": "{{pct}} % Ihrer Schübe begannen an einem Tag mit fallendem Luftdruck (≥{{hpa}} hPa) – gegenüber {{all}} % aller Tage.",
+    "learnEmpty": "Nach ein paar Wochen mit Einträgen fasst Tinnara hier in einfachen Worten zusammen, was auffällt.",
+    "part": {
+      "night": "in der Nacht",
+      "morning": "am Morgen",
+      "afternoon": "am Nachmittag",
+      "evening": "am Abend"
+    },
+    "learnNote": "Beobachtungen aus Ihrem eigenen Tagebuch in einfachen Worten. Sie beschreiben – sie erklären nicht."
+  },
+  "learn": {
+    "trendDown": "In den letzten 30 Tagen lag Ihr Tinnitus im Schnitt bei {{now}} – weniger als {{before}} in den 30 Tagen davor.",
+    "trendUp": "In den letzten 30 Tagen lag Ihr Tinnitus im Schnitt bei {{now}} – mehr als {{before}} in den 30 Tagen davor.",
+    "trendSame": "In den letzten 30 Tagen lag Ihr Tinnitus im Schnitt bei {{now}} – etwa wie in den 30 Tagen davor ({{before}}).",
+    "contrast": {
+      "sleep": "Nach guten Nächten lag er im Schnitt bei {{hi}}, nach schlechten Nächten bei {{lo}}.",
+      "stress": "An stressigen Tagen lag er bei {{hi}}, an ruhigen Tagen bei {{lo}}.",
+      "noise": "Am Tag nach einem lauten Tag lag er bei {{hi}}, nach leisen Tagen bei {{lo}}."
+    },
+    "weekday": "{{pct}} % Ihrer Schübe begannen an einem {{day}}.",
+    "time": "Ihre Schübe beginnen am häufigsten {{part}} ({{pct}} %).",
+    "period": "{{pct}} % Ihrer Schübe begannen innerhalb eines Tages um Ihre Periode.",
+    "pressureYes": "{{pct}} % Ihrer Schübe begannen an einem Tag, an dem der Luftdruck um mindestens {{hpa}} hPa fiel – nur {{all}} % aller Tage hatten einen solchen Abfall.",
+    "pressureNo": "Fallender Luftdruck sticht nicht heraus: {{pct}} % Ihrer Schübe begannen an einem Tag mit fallendem Druck, etwa so viele wie bei allen Tagen ({{all}} %).",
+    "trigger": "„{{tag}}“ ist der Auslöser, den Sie am häufigsten erfassen – bei {{pct}} % der Schübe.",
+    "relief": "„{{tag}}“ hat bei {{pct}} % Ihrer Schübe geholfen."
+  },
+  "report": {
+    "title": "Tinnitus-Tagebuch – Bericht",
+    "sub": "Überblick auf einer Seite, Lautstärke Woche für Woche und eine Zeile pro Schub – aufbereitet für Ihre Hausärztin, Ihren HNO-Arzt oder Ihre HNO-Ärztin.",
+    "daysLogged": "Erfasste Tage",
+    "hardDays": "Schwere Tage (Lautstärke 7+)",
+    "spikes": "Schübe",
+    "peakShort": "Max.",
+    "chartTitle": "Lautstärke pro Woche",
+    "legendLoud": "Ø Lautstärke (0–10)",
+    "legendSpikes": "Schübe in der Woche",
+    "weeks": "Woche für Woche",
+    "week": "Woche ab",
+    "loudShort": "Laut.",
+    "distressShort": "Belast.",
+    "daysShort": "Tage",
+    "scaleNote": "Lautstärke 0–10; Belastung, Schlaf, Stress und Lärm 1–5 (Schlaf: 5 = gut).",
+    "helped": "Geholfen / verwendet",
+    "notesPh": "Fragen, Veränderungen beim Hören, Medikamente oder Hilfsmittel, Sonstiges…",
+    "pressureNote": "hPa = Tagesmittel des Luftdrucks an Ihrem Ort, Δ = Änderung zum Vortag."
+  },
+  "notif": {
+    "checkinTitle": "Wie laut ist es heute?",
+    "checkinBody": "Ein Eintrag in 5 Sekunden hält Ihre Kurve vollständig.",
+    "openTitle": "Hat es sich beruhigt?",
+    "openBody": "Ein Schub ist seit 12 Stunden offen. Tippen, um das Ende einzutragen.",
+    "actionEnd": "Jetzt ruhiger",
+    "actionContinue": "Noch laut"
+  },
+  "settings": {
+    "proThanks": "Danke, dass Sie Tinnara unterstützen.",
+    "freeHint": "Unbegrenzt erfassen. Pro bringt Ihre Kurve, Muster, den PDF-Bericht und die PIN-Sperre.",
+    "cycleHint": "Fügt „Periode heute“ zum Tageseintrag hinzu und zeigt den Anteil der Schübe rund um Ihre Periode.",
+    "triggers": "Auslöser",
+    "openEpisodeReminder": "Erinnern, wenn ein Schub 12 Std. offen bleibt"
+  },
+  "backup": {
+    "importHint": "Der neueste Eintrag gewinnt, wenn derselbe Eintrag auf beiden Telefonen existiert."
+  },
+  "plan": {
+    "pro": "Tinnara Pro"
+  },
+  "paywall": {
+    "title": "Sehen, was ihn lauter macht",
+    "benefits": [
+      "Ihre Lautstärke-Kurve über Wochen und Monate",
+      "Wie Schlaf, Stress und Lärm mit lauteren Tagen zusammenhängen",
+      "PDF-Bericht, den Ihre HNO-Praxis in einer Minute liest",
+      "PIN-Sperre, verschlüsselte Sicherung und unbegrenzter Verlauf"
+    ],
+    "reasons": {
+      "insights": "Ihre Kurve und der Bericht sind Teil von Pro.",
+      "weather": "Luftdruck ist Teil von Pro.",
+      "cycle": "Zyklus-Erfassung ist Teil von Pro."
+    }
+  },
+  "onboarding": {
+    "steps": [
+      {
+        "title": "Eine Zahl pro Tag",
+        "body": "Wie laut war es heute, 0–10? Fünf Sekunden am Abend. Über Wochen wird aus dieser Zahl eine Kurve, die Sie wirklich jemandem zeigen können."
+      },
+      {
+        "title": "Jetzt lauter",
+        "body": "Wenn es plötzlich lauter wird, hält ein Tipp den Schub fest. Wie er klingt, was ihn ausgelöst hat und was geholfen hat, kann warten."
+      },
+      {
+        "title": "Privat von Grund auf",
+        "body": "Kein Konto, keine Cloud, kein Tracking. Ihr Tagebuch lebt auf diesem Telefon, und nur Sie können es exportieren."
+      }
+    ],
+    "welcome": "Willkommen bei Tinnara",
+    "setupTitle": "Zu Ihrem Tinnitus {{name}}",
+    "setupBody": "Freiwillig – es steht oben in Ihrem Bericht, damit Ihre Ärztin oder Ihr Arzt das Wichtigste sieht.",
+    "sinceQ": "Seit wann haben Sie ihn?",
+    "sinceQShort": "Seit",
+    "since": {
+      "lt3m": "Weniger als 3 Monate",
+      "3to12m": "3–12 Monate",
+      "1to5y": "1–5 Jahre",
+      "gt5y": "Mehr als 5 Jahre"
+    },
+    "sideQ": "Wo hören Sie ihn?",
+    "soundQ": "Wie klingt er meistens?",
+    "newHint": "Neuer Tinnitus sollte ärztlich abgeklärt werden – besonders zusammen mit einer Hörveränderung.",
+    "widgetBody": "Das Widget hält einen Schub fest, ohne die App zu öffnen, und zeigt die heutige Zahl und Ihren 7-Tage-Durchschnitt.",
+    "extrasBody": "Freiwillig. Beides ist Teil von Pro – es wird aktiv, sobald Sie die kostenlose Testphase starten.",
+    "widgetLater": "Sie können es später hinzufügen: Einstellungen → Widget → Hinzufügen."
+  },
+  "diary": {
+    "groups": {
+      "trigger": "Auslöser",
+      "sound": "Geräusch",
+      "location": "Wo",
+      "symptom": "Außerdem bemerkt",
+      "relief": "Was half"
+    },
+    "tags": {
+      "trigger": {
+        "loud_noise": "Lauter Lärm",
+        "headphones": "Kopfhörer",
+        "concert": "Konzert / Party",
+        "quiet_room": "Sehr stiller Raum",
+        "stress": "Stress",
+        "poor_sleep": "Schlechter Schlaf",
+        "caffeine": "Koffein",
+        "alcohol": "Alkohol",
+        "salt": "Salziges Essen",
+        "nicotine": "Nikotin",
+        "jaw_clench": "Zähneknirschen / Kieferpressen",
+        "neck_tension": "Nackenverspannung",
+        "cold_illness": "Erkältung / Krankheit",
+        "flight_pressure": "Flug / Druckänderung",
+        "medication_change": "Medikamentenwechsel",
+        "fatigue": "Müdigkeit",
+        "exertion": "Körperliche Anstrengung"
+      },
+      "sound": {
+        "ringing": "Klingeln",
+        "whistling": "Pfeifen",
+        "hissing": "Zischen",
+        "buzzing": "Summen",
+        "humming": "Brummen",
+        "roaring": "Rauschen",
+        "pulsing": "Pulsierend",
+        "clicking": "Klicken",
+        "several": "Mehrere Geräusche"
+      },
+      "location": {
+        "left": "Linkes Ohr",
+        "right": "Rechtes Ohr",
+        "both": "Beide Ohren",
+        "in_head": "Im Kopf"
+      },
+      "symptom": {
+        "hyperacusis": "Geräuschempfindlichkeit",
+        "ear_fullness": "Druckgefühl im Ohr",
+        "muffled_hearing": "Dumpfes Hören",
+        "dizziness": "Schwindel",
+        "headache": "Kopfschmerzen",
+        "jaw_pain": "Kieferschmerzen",
+        "neck_pain": "Nackenschmerzen",
+        "concentration": "Konzentrationsprobleme",
+        "sleep_trouble": "Schlafprobleme",
+        "anxiety": "Sorgen / Angst",
+        "irritability": "Reizbarkeit",
+        "fatigue": "Erschöpfung"
+      },
+      "relief": {
+        "masking": "Maskierungsgeräusch",
+        "nature_sounds": "Naturgeräusche",
+        "music": "Musik",
+        "distraction": "Ablenkung",
+        "relaxation": "Entspannung",
+        "breathing": "Atemübung",
+        "exercise": "Bewegung",
+        "sleep": "Schlaf",
+        "hearing_aid": "Hörgerät",
+        "fresh_air": "Frische Luft",
+        "talking": "Mit jemandem reden"
+      }
+    }
+  },
+  "redFlags": {
+    "link": "Wann sollte ich schnell zum Arzt?",
+    "title": "Wann Sie schnell ärztliche Hilfe brauchen",
+    "intro": "Tinnitus ist an sich meist harmlos. In wenigen Situationen sollten Sie aber schnell handeln:",
+    "urgentTitle": "Noch am selben Tag – oder 112 anrufen",
+    "urgent": [
+      "Ihr Hörvermögen sinkt plötzlich auf einem Ohr (innerhalb von Stunden oder wenigen Tagen). Ein Hörsturz wird am besten innerhalb weniger Tage behandelt.",
+      "Der Tinnitus kommt zusammen mit plötzlichem starkem Schwindel, Gesichtslähmung, Doppelbildern oder Sprachstörungen.",
+      "Er begann nach einem Schlag auf den Kopf."
+    ],
+    "soonTitle": "Bald einen Termin vereinbaren",
+    "soon": [
+      "Er ist nur auf einem Ohr und geht nicht weg.",
+      "Er pulsiert im Takt Ihres Herzschlags.",
+      "Er kommt mit Ohrenschmerzen, Ausfluss oder einem verstopften Ohr, das nicht frei wird.",
+      "Er ist neu und wurde noch nicht abgeklärt.",
+      "Er belastet Ihren Schlaf, Ihre Stimmung oder Ihre Arbeit stark – es gibt Hilfe."
+    ],
+    "routine": "Ein länger bestehender, abgeklärter Tinnitus ist meist nicht gefährlich. Geräuschtherapie, Hörgeräte und Programme auf Basis der kognitiven Verhaltenstherapie gibt es über Ihre Hausarztpraxis oder HNO-Praxis.",
+    "disclaimer": "Allgemeine Information, keine Diagnose. Im Zweifel rufen Sie Ihre Praxis an."
+  },
+  "widget": {
+    "title": "Jetzt-lauter-Widget",
+    "louderNow": "Jetzt lauter",
+    "openSpike": "Schub läuft",
+    "ongoing": "Gerade lauter",
+    "notLogged": "Heute noch nicht erfasst",
+    "today": "Heute: {{n}}/10",
+    "avg7": "7-Tage-Ø {{n}}",
+    "spikes_one": "{{count}} Schub in diesem Monat",
+    "spikes_other": "{{count}} Schübe in diesem Monat",
+    "noData": "Noch keine Einträge",
+    "settingsHint": "Schub vom Home- oder Sperrbildschirm erfassen",
+    "previewLine1": "Heute: 3/10",
+    "previewLine2": "7-Tage-Ø 3,4 · 2 Schübe in diesem Monat",
+    "intro": "Ein Tipp auf das Widget hält einen Schub fest – ohne erst die App zu suchen.",
+    "stepsIos": [
+      "Halten Sie eine freie Stelle auf dem Home-Bildschirm gedrückt, bis die Apps wackeln.",
+      "Tippen Sie auf + (oben links) und suchen Sie nach Tinnara.",
+      "Wählen Sie das kleine oder mittlere Widget und tippen Sie auf Widget hinzufügen."
+    ],
+    "stepsAndroid": [
+      "Halten Sie eine freie Stelle auf dem Startbildschirm gedrückt.",
+      "Tippen Sie auf Widgets und suchen Sie Tinnara.",
+      "Ziehen Sie das Widget auf den Startbildschirm."
+    ],
+    "lockscreen": "Sperrbildschirm: Sperrbildschirm gedrückt halten → Anpassen → Widget-Bereich antippen → Tinnara."
+  },
+  "weather": {
+    "infoWhy": "Manche Menschen mit Tinnitus – besonders bei Morbus Menière oder Druckproblemen im Ohr – bemerken Veränderungen, wenn sich der Luftdruck ändert. Die Studienlage ist begrenzt und es ist individuell verschieden; die Änderung zählt mehr als der absolute Wert.",
+    "infoApp": "Tinnara speichert den Tagesmittelwert für Ihren Ort und vergleicht die Tage, an denen Ihre Schübe begannen, mit allen anderen Tagen. Musterkarte und Bericht zeigen genau diesen Vergleich – mehr nicht.",
+    "hint": "Täglichen Luftdruck für Ihren Ort verfolgen – ohne Standortzugriff.",
+    "pickTitle": "Ihr Ort",
+    "pickHint": "Geben Sie eine Stadt ein. Nur ihre Koordinaten gehen an den Wetterdienst (Open-Meteo) – nie Ihr Gerätestandort.",
+    "privacy": "Open-Meteo ist ein kostenloser, offener Wetterdienst ohne Konto oder Tracking. Der Druckverlauf bleibt nur auf Ihrem Gerät.",
+    "infoDisclaimer": "Das ist eine Beschreibung Ihres eigenen Tagebuchs, keine medizinische Aussage. Sprechen Sie mit Ihrer Ärztin oder Ihrem Arzt darüber, was es für Sie bedeutet."
+  }
+}
