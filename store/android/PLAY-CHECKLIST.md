@@ -1,6 +1,8 @@
 # Android / Google Play – checklist (Tinnara)
 
-Not started. Same order as Migrano (see App-Playbook §7):
+Status 26 Oct: steps 1, 3, 4 done; step 2 done except content rating (IARC terms = Steffen); step 5: AAB uploaded (draft 1.0.0, internal, testers = Ilumie testers) – Steffen rolls out + creates Monetize products; step 6: RevenueCat Play app + goog_ key done, service-account JSON in RevenueCat = Steffen.
+
+Same order as Migrano (see App-Playbook §7):
 1. Play Console app `com.ilumie.tinnara` (Tinnara – Tinnitus Tracker, en-US default, app, free). Store listing en/da/de/sv/no from `store/listing/*.md`; graphics: `store/android/icon-512.png`, `feature-graphic-<lang>.png`, `store/screenshots/<lang>/store-android-N.png` (upload via ilumie.com/play-assets/tinnara/). Category Medical, support@tinnara.app, https://tinnara.app, privacy https://tinnara.app/privacy (mirror on ilumie.com/tinnara/privacy/ if Google's SSL check fails).
 2. Declarations: no ads, app access = Play Billing instructions, content rating (PEGI 3, digital purchases), 18+, data safety = purchase history + device id (RevenueCat; air pressure town coordinates are sent to Open-Meteo only when the user turns it on – not linked, not stored), health = condition management, no ad id, AI = none.
 3. Keystore: `keytool -genkeypair -v -keystore tinnara-upload.jks -alias tinnara -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Therkildsen Group, O=Therkildsen Group, L=Viborg, C=DK"` → Codemagic Android keystores, reference `tinnara_upload`.
