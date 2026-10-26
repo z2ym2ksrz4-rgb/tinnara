@@ -11,6 +11,7 @@ import appConfig from "../../app.config.json";
 import { usePurchases, usePaywall, useProGate } from "@/core/purchases";
 import { useUi } from "@/domain/tinnara/store";
 import { InfoSheets } from "@/domain/tinnara/screens/InfoSheets";
+import { MedicationsSheet } from "@/domain/tinnara/screens/Medications";
 import { searchPlaces, type Place } from "@/core/diary";
 import { maybeRefreshWeather } from "@/domain/tinnara/weather";
 
@@ -178,6 +179,7 @@ export function SettingsScreen() {
         <label className="field"><span>{t("backup.passphraseShort")}</span><input type="password" value={importPass} onChange={(e) => setImportPass(e.target.value)} /></label>
         <button className="cta" disabled={!importText || !importPass} onClick={async () => { try { await importBackup(importText, importPass); setImportOpen(false); toast(t("backup.imported")); useUi.getState().bump(); } catch { toast(t("backup.importFailed")); } }}>{t("backup.import")}</button>
       </Sheet>
+      <MedicationsSheet />
       <InfoSheets />
       {msg && <div className="toast">{msg}</div>}
     </section>
